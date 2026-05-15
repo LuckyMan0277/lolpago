@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s -X POST http://localhost:3000/api/report -H \"Content-Type: application/json\" -d @scripts/test-payload.json -o scripts/test-response.json -w \"HTTP %{http_code} | %{time_total}s\\\\n\")",
+      "Bash(node -e \"const r=require\\('./scripts/test-response.json'\\).report; console.log\\(JSON.stringify\\(r,null,2\\)\\)\")",
+      "Bash(node -e \"const r=require\\('./scripts/test-response.json'\\).report; console.log\\('=== key_orders ==='\\); r.key_orders.forEach\\(\\(s,i\\)=>console.log\\(\\(i+1\\)+'. '+s\\)\\); console.log\\('\\\\n=== summary ==='\\); console.log\\(r.summary.headline\\); console.log\\('phase:', r.summary.early_phase, '/', r.summary.mid_phase, '/', r.summary.late_phase\\); console.log\\('win:', r.summary.win_condition\\); console.log\\('risk:', r.summary.key_risk\\); console.log\\('\\\\n=== my_champion_guide ==='\\); Object.entries\\(r.my_champion_guide\\).forEach\\(\\([k,v]\\)=>console.log\\(k+': '+v\\)\\); console.log\\('\\\\n=== lanes ==='\\); r.lanes.forEach\\(l=>{console.log\\('\\\\n['+l.lane+'] '+l.matchup\\); console.log\\('  early:',l.early\\); console.log\\('  mid:',l.mid\\); console.log\\('  level2:',l.level2\\); console.log\\('  action:',l.key_action\\);}\\);\")",
+      "Bash(node -e \"const r=require\\('./scripts/test-response.json'\\).report; console.log\\('=== key_orders \\(3줄\\) ==='\\); r.key_orders.forEach\\(\\(s,i\\)=>console.log\\(\\(i+1\\)+'. ['+s.length+'자] '+s\\)\\);\")",
+      "Bash(npx tsc *)",
+      "Bash(curl -s -o /dev/null -w \"/ HTTP %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"/report/new HTTP %{http_code}\\\\n\" http://localhost:3000/report/new)",
+      "Bash(curl -s -o NUL -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o NUL -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/report/new)"
+    ]
+  }
+}

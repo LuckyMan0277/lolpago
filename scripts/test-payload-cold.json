@@ -1,0 +1,19 @@
+{
+  "patch": "16.10.1",
+  "tier": "PLAT_EMERALD",
+  "teamBlue": [
+    { "championKey": "Camille", "lane": "TOP" },
+    { "championKey": "Graves", "lane": "JUNGLE" },
+    { "championKey": "Zed", "lane": "MID" },
+    { "championKey": "Varus", "lane": "ADC" },
+    { "championKey": "Thresh", "lane": "SUPPORT" }
+  ],
+  "teamRed": [
+    { "championKey": "Ornn", "lane": "TOP" },
+    { "championKey": "Sejuani", "lane": "JUNGLE" },
+    { "championKey": "Viktor", "lane": "MID" },
+    { "championKey": "Kaisa", "lane": "ADC" },
+    { "championKey": "Braum", "lane": "SUPPORT" }
+  ],
+  "myPick": { "championKey": "Zed", "lane": "MID" }
+}

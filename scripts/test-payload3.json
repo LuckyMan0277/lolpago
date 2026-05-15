@@ -1,0 +1,19 @@
+{
+  "patch": "16.10.1",
+  "tier": "PLAT_EMERALD",
+  "teamBlue": [
+    { "championKey": "Kayle", "lane": "TOP" },
+    { "championKey": "Khazix", "lane": "JUNGLE" },
+    { "championKey": "Kassadin", "lane": "MID" },
+    { "championKey": "Jinx", "lane": "ADC" },
+    { "championKey": "Lulu", "lane": "SUPPORT" }
+  ],
+  "teamRed": [
+    { "championKey": "Renekton", "lane": "TOP" },
+    { "championKey": "Elise", "lane": "JUNGLE" },
+    { "championKey": "Leblanc", "lane": "MID" },
+    { "championKey": "Caitlyn", "lane": "ADC" },
+    { "championKey": "Morgana", "lane": "SUPPORT" }
+  ],
+  "myPick": { "championKey": "Jinx", "lane": "ADC" }
+}

@@ -1,0 +1,19 @@
+{
+  "patch": "16.10.1",
+  "tier": "PLAT_EMERALD",
+  "teamBlue": [
+    { "championKey": "Yorick", "lane": "TOP" },
+    { "championKey": "LeeSin", "lane": "JUNGLE" },
+    { "championKey": "Orianna", "lane": "MID" },
+    { "championKey": "Jhin", "lane": "ADC" },
+    { "championKey": "Nautilus", "lane": "SUPPORT" }
+  ],
+  "teamRed": [
+    { "championKey": "Darius", "lane": "TOP" },
+    { "championKey": "JarvanIV", "lane": "JUNGLE" },
+    { "championKey": "Syndra", "lane": "MID" },
+    { "championKey": "Draven", "lane": "ADC" },
+    { "championKey": "Leona", "lane": "SUPPORT" }
+  ],
+  "myPick": { "championKey": "Yorick", "lane": "TOP" }
+}

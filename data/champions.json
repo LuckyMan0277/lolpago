@@ -1,0 +1,3061 @@
+{
+  "patch": "16.10.1",
+  "generated_at": "2026-05-13T17:25:05.550Z",
+  "count": 172,
+  "champions": [
+    {
+      "id": 86,
+      "key": "Garen",
+      "name_en": "Garen",
+      "name_ko": "가렌",
+      "title_ko": "데마시아의 힘",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 7,
+        "magic": 1,
+        "difficulty": 5
+      },
+      "partype": "None"
+    },
+    {
+      "id": 3,
+      "key": "Galio",
+      "name_en": "Galio",
+      "name_ko": "갈리오",
+      "title_ko": "위대한 석상",
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 10,
+        "magic": 6,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 41,
+      "key": "Gangplank",
+      "name_en": "Gangplank",
+      "name_ko": "갱플랭크",
+      "title_ko": "바다의 무법자",
+      "tags": [
+        "Fighter"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 6,
+        "magic": 4,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 79,
+      "key": "Gragas",
+      "name_en": "Gragas",
+      "name_ko": "그라가스",
+      "title_ko": "술취한 난동꾼",
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 7,
+        "magic": 6,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 104,
+      "key": "Graves",
+      "name_en": "Graves",
+      "name_ko": "그레이브즈",
+      "title_ko": "무법자",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 887,
+      "key": "Gwen",
+      "name_en": "Gwen",
+      "name_ko": "그웬",
+      "title_ko": "신성한 재봉사",
+      "tags": [
+        "Fighter"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 4,
+        "magic": 5,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 150,
+      "key": "Gnar",
+      "name_en": "Gnar",
+      "name_ko": "나르",
+      "title_ko": "잃어버린 고리",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 5,
+        "magic": 5,
+        "difficulty": 8
+      },
+      "partype": "Rage"
+    },
+    {
+      "id": 267,
+      "key": "Nami",
+      "name_en": "Nami",
+      "name_ko": "나미",
+      "title_ko": "파도 소환사",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 3,
+        "magic": 7,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 75,
+      "key": "Nasus",
+      "name_en": "Nasus",
+      "name_ko": "나서스",
+      "title_ko": "사막의 관리자",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 5,
+        "magic": 6,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 950,
+      "key": "Naafiri",
+      "name_en": "Naafiri",
+      "name_ko": "나피리",
+      "title_ko": "백 번 무는 사냥개",
+      "tags": [
+        "Assassin",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 5,
+        "magic": 0,
+        "difficulty": 2
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 111,
+      "key": "Nautilus",
+      "name_en": "Nautilus",
+      "name_ko": "노틸러스",
+      "title_ko": "심해의 타이탄",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 6,
+        "magic": 6,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 56,
+      "key": "Nocturne",
+      "name_en": "Nocturne",
+      "name_ko": "녹턴",
+      "title_ko": "영원한 악몽",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 5,
+        "magic": 2,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 20,
+      "key": "Nunu",
+      "name_en": "Nunu & Willump",
+      "name_ko": "누누와 윌럼프",
+      "title_ko": "소년과 설인",
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 6,
+        "magic": 7,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 76,
+      "key": "Nidalee",
+      "name_en": "Nidalee",
+      "name_ko": "니달리",
+      "title_ko": "야성의 사냥꾼",
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 4,
+        "magic": 7,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 518,
+      "key": "Neeko",
+      "name_en": "Neeko",
+      "name_ko": "니코",
+      "title_ko": "알쏭달쏭 카멜레온",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 1,
+        "magic": 9,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 895,
+      "key": "Nilah",
+      "name_en": "Nilah",
+      "name_ko": "닐라",
+      "title_ko": "해방된 기쁨",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 4,
+        "magic": 4,
+        "difficulty": 10
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 122,
+      "key": "Darius",
+      "name_en": "Darius",
+      "name_ko": "다리우스",
+      "title_ko": "녹서스의 실력자",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 5,
+        "magic": 1,
+        "difficulty": 2
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 131,
+      "key": "Diana",
+      "name_en": "Diana",
+      "name_ko": "다이애나",
+      "title_ko": "차가운 달의 분노",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 6,
+        "magic": 8,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 119,
+      "key": "Draven",
+      "name_en": "Draven",
+      "name_ko": "드레이븐",
+      "title_ko": "화려한 처형자",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 3,
+        "magic": 1,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 13,
+      "key": "Ryze",
+      "name_en": "Ryze",
+      "name_ko": "라이즈",
+      "title_ko": "룬 마법사",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 2,
+        "magic": 10,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 497,
+      "key": "Rakan",
+      "name_en": "Rakan",
+      "name_ko": "라칸",
+      "title_ko": "매혹하는 자",
+      "tags": [
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 4,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 33,
+      "key": "Rammus",
+      "name_en": "Rammus",
+      "name_ko": "람머스",
+      "title_ko": "중무장 아르마딜로",
+      "tags": [
+        "Tank"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 10,
+        "magic": 5,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 99,
+      "key": "Lux",
+      "name_en": "Lux",
+      "name_ko": "럭스",
+      "title_ko": "광명의 소녀",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 4,
+        "magic": 9,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 68,
+      "key": "Rumble",
+      "name_en": "Rumble",
+      "name_ko": "럼블",
+      "title_ko": "기계 악동",
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 6,
+        "magic": 8,
+        "difficulty": 10
+      },
+      "partype": "Heat"
+    },
+    {
+      "id": 888,
+      "key": "Renata",
+      "name_en": "Renata Glasc",
+      "name_ko": "레나타 글라스크",
+      "title_ko": "화공 남작",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 6,
+        "magic": 9,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 58,
+      "key": "Renekton",
+      "name_en": "Renekton",
+      "name_ko": "레넥톤",
+      "title_ko": "사막의 도살자",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 2,
+        "difficulty": 3
+      },
+      "partype": "Fury"
+    },
+    {
+      "id": 89,
+      "key": "Leona",
+      "name_en": "Leona",
+      "name_ko": "레오나",
+      "title_ko": "여명의 빛",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 8,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 421,
+      "key": "RekSai",
+      "name_en": "Rek'Sai",
+      "name_ko": "렉사이",
+      "title_ko": "공허의 복병",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 2,
+        "difficulty": 3
+      },
+      "partype": "Rage"
+    },
+    {
+      "id": 526,
+      "key": "Rell",
+      "name_en": "Rell",
+      "name_ko": "렐",
+      "title_ko": "철의 여인",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 0,
+        "defense": 0,
+        "magic": 0,
+        "difficulty": 0
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 107,
+      "key": "Rengar",
+      "name_en": "Rengar",
+      "name_ko": "렝가",
+      "title_ko": "추적하는 사자",
+      "tags": [
+        "Assassin",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 4,
+        "magic": 2,
+        "difficulty": 8
+      },
+      "partype": "Ferocity"
+    },
+    {
+      "id": 236,
+      "key": "Lucian",
+      "name_en": "Lucian",
+      "name_ko": "루시안",
+      "title_ko": "정화의 사도",
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 117,
+      "key": "Lulu",
+      "name_en": "Lulu",
+      "name_ko": "룰루",
+      "title_ko": "요정 마법사",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 7,
+      "key": "Leblanc",
+      "name_en": "LeBlanc",
+      "name_ko": "르블랑",
+      "title_ko": "환술사",
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 4,
+        "magic": 10,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 64,
+      "key": "LeeSin",
+      "name_en": "Lee Sin",
+      "name_ko": "리 신",
+      "title_ko": "눈먼 수도승",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "partype": "Energy"
+    },
+    {
+      "id": 92,
+      "key": "Riven",
+      "name_en": "Riven",
+      "name_ko": "리븐",
+      "title_ko": "추방자",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 1,
+        "difficulty": 8
+      },
+      "partype": "None"
+    },
+    {
+      "id": 127,
+      "key": "Lissandra",
+      "name_en": "Lissandra",
+      "name_ko": "리산드라",
+      "title_ko": "얼음 마녀",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 5,
+        "magic": 8,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 876,
+      "key": "Lillia",
+      "name_en": "Lillia",
+      "name_ko": "릴리아",
+      "title_ko": "수줍은 꽃",
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "info": {
+        "attack": 0,
+        "defense": 2,
+        "magic": 10,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 11,
+      "key": "MasterYi",
+      "name_en": "Master Yi",
+      "name_ko": "마스터 이",
+      "title_ko": "우주 검사",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 10,
+        "defense": 4,
+        "magic": 2,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 57,
+      "key": "Maokai",
+      "name_en": "Maokai",
+      "name_ko": "마오카이",
+      "title_ko": "뒤틀린 나무 정령",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 8,
+        "magic": 6,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 90,
+      "key": "Malzahar",
+      "name_en": "Malzahar",
+      "name_ko": "말자하",
+      "title_ko": "공허의 예언자",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 2,
+        "magic": 9,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 54,
+      "key": "Malphite",
+      "name_en": "Malphite",
+      "name_ko": "말파이트",
+      "title_ko": "거석의 파편",
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 9,
+        "magic": 7,
+        "difficulty": 2
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 800,
+      "key": "Mel",
+      "name_en": "Mel",
+      "name_ko": "멜",
+      "title_ko": "영혼의 반향",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 4,
+        "magic": 9,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 82,
+      "key": "Mordekaiser",
+      "name_en": "Mordekaiser",
+      "name_ko": "모데카이저",
+      "title_ko": "강철의 망령",
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 6,
+        "magic": 7,
+        "difficulty": 4
+      },
+      "partype": "Shield"
+    },
+    {
+      "id": 25,
+      "key": "Morgana",
+      "name_en": "Morgana",
+      "name_ko": "모르가나",
+      "title_ko": "타락한 자",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 6,
+        "magic": 8,
+        "difficulty": 1
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 36,
+      "key": "DrMundo",
+      "name_en": "Dr. Mundo",
+      "name_ko": "문도 박사",
+      "title_ko": "자운의 광인",
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 7,
+        "magic": 6,
+        "difficulty": 5
+      },
+      "partype": "None"
+    },
+    {
+      "id": 21,
+      "key": "MissFortune",
+      "name_en": "Miss Fortune",
+      "name_ko": "미스 포츈",
+      "title_ko": "현상금 사냥꾼",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 5,
+        "difficulty": 1
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 902,
+      "key": "Milio",
+      "name_en": "Milio",
+      "name_ko": "밀리오",
+      "title_ko": "온화한 불꽃",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 4,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 432,
+      "key": "Bard",
+      "name_en": "Bard",
+      "name_ko": "바드",
+      "title_ko": "영겁의 수호자",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 4,
+        "magic": 5,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 110,
+      "key": "Varus",
+      "name_en": "Varus",
+      "name_ko": "바루스",
+      "title_ko": "응징의 화살",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 3,
+        "magic": 4,
+        "difficulty": 2
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 254,
+      "key": "Vi",
+      "name_en": "Vi",
+      "name_ko": "바이",
+      "title_ko": "필트오버의 집행자",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 45,
+      "key": "Veigar",
+      "name_en": "Veigar",
+      "name_ko": "베이가",
+      "title_ko": "악의 작은 지배자",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 2,
+        "magic": 10,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 67,
+      "key": "Vayne",
+      "name_en": "Vayne",
+      "name_ko": "베인",
+      "title_ko": "어둠 사냥꾼",
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 10,
+        "defense": 1,
+        "magic": 1,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 711,
+      "key": "Vex",
+      "name_en": "Vex",
+      "name_ko": "벡스",
+      "title_ko": "우울주의자",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 0,
+        "defense": 0,
+        "magic": 0,
+        "difficulty": 0
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 200,
+      "key": "Belveth",
+      "name_en": "Bel'Veth",
+      "name_ko": "벨베스",
+      "title_ko": "공허의 여제",
+      "tags": [
+        "Fighter"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 2,
+        "magic": 7,
+        "difficulty": 10
+      },
+      "partype": ""
+    },
+    {
+      "id": 161,
+      "key": "Velkoz",
+      "name_en": "Vel'Koz",
+      "name_ko": "벨코즈",
+      "title_ko": "공허의 눈",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 2,
+        "magic": 10,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 106,
+      "key": "Volibear",
+      "name_en": "Volibear",
+      "name_ko": "볼리베어",
+      "title_ko": "무자비한 폭풍",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 7,
+        "magic": 4,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 201,
+      "key": "Braum",
+      "name_en": "Braum",
+      "name_ko": "브라움",
+      "title_ko": "프렐요드의 심장",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 9,
+        "magic": 4,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 233,
+      "key": "Briar",
+      "name_en": "Briar",
+      "name_ko": "브라이어",
+      "title_ko": "억눌린 허기",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 3
+      },
+      "partype": "Fury"
+    },
+    {
+      "id": 63,
+      "key": "Brand",
+      "name_en": "Brand",
+      "name_ko": "브랜드",
+      "title_ko": "타오르는 복수",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 2,
+        "magic": 9,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 8,
+      "key": "Vladimir",
+      "name_en": "Vladimir",
+      "name_ko": "블라디미르",
+      "title_ko": "진홍빛 사신",
+      "tags": [
+        "Mage",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 6,
+        "magic": 8,
+        "difficulty": 7
+      },
+      "partype": "Crimson Rush"
+    },
+    {
+      "id": 53,
+      "key": "Blitzcrank",
+      "name_en": "Blitzcrank",
+      "name_ko": "블리츠크랭크",
+      "title_ko": "거대 증기 골렘",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 8,
+        "magic": 5,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 234,
+      "key": "Viego",
+      "name_en": "Viego",
+      "name_ko": "비에고",
+      "title_ko": "몰락한 왕",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 4,
+        "magic": 2,
+        "difficulty": 5
+      },
+      "partype": "None"
+    },
+    {
+      "id": 112,
+      "key": "Viktor",
+      "name_en": "Viktor",
+      "name_ko": "빅토르",
+      "title_ko": "아케인의 전령관",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 4,
+        "magic": 10,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 78,
+      "key": "Poppy",
+      "name_en": "Poppy",
+      "name_ko": "뽀삐",
+      "title_ko": "망치의 수호자",
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 7,
+        "magic": 2,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 360,
+      "key": "Samira",
+      "name_en": "Samira",
+      "name_ko": "사미라",
+      "title_ko": "사막의 장미",
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 14,
+      "key": "Sion",
+      "name_en": "Sion",
+      "name_ko": "사이온",
+      "title_ko": "언데드 학살병기",
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 9,
+        "magic": 3,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 517,
+      "key": "Sylas",
+      "name_en": "Sylas",
+      "name_ko": "사일러스",
+      "title_ko": "해방된 자",
+      "tags": [
+        "Mage",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 4,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 35,
+      "key": "Shaco",
+      "name_en": "Shaco",
+      "name_ko": "샤코",
+      "title_ko": "악마 어릿광대",
+      "tags": [
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 4,
+        "magic": 6,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 235,
+      "key": "Senna",
+      "name_en": "Senna",
+      "name_ko": "세나",
+      "title_ko": "구원자",
+      "tags": [
+        "Support",
+        "Marksman"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 2,
+        "magic": 6,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 147,
+      "key": "Seraphine",
+      "name_en": "Seraphine",
+      "name_ko": "세라핀",
+      "title_ko": "노래하는 별",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 0,
+        "defense": 0,
+        "magic": 0,
+        "difficulty": 0
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 113,
+      "key": "Sejuani",
+      "name_en": "Sejuani",
+      "name_ko": "세주아니",
+      "title_ko": "혹한의 분노",
+      "tags": [
+        "Tank"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 7,
+        "magic": 6,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 875,
+      "key": "Sett",
+      "name_en": "Sett",
+      "name_ko": "세트",
+      "title_ko": "우두머리",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 1,
+        "difficulty": 2
+      },
+      "partype": "Grit"
+    },
+    {
+      "id": 37,
+      "key": "Sona",
+      "name_en": "Sona",
+      "name_ko": "소나",
+      "title_ko": "현의 명인",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 2,
+        "magic": 8,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 16,
+      "key": "Soraka",
+      "name_en": "Soraka",
+      "name_ko": "소라카",
+      "title_ko": "별의 아이",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 98,
+      "key": "Shen",
+      "name_en": "Shen",
+      "name_ko": "쉔",
+      "title_ko": "황혼의 눈",
+      "tags": [
+        "Tank"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 9,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "partype": "Energy"
+    },
+    {
+      "id": 102,
+      "key": "Shyvana",
+      "name_en": "Shyvana",
+      "name_ko": "쉬바나",
+      "title_ko": "하프 드래곤",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "partype": "Fury"
+    },
+    {
+      "id": 901,
+      "key": "Smolder",
+      "name_en": "Smolder",
+      "name_ko": "스몰더",
+      "title_ko": "꼬마 불꽃용",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 5,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 50,
+      "key": "Swain",
+      "name_en": "Swain",
+      "name_ko": "스웨인",
+      "title_ko": "녹서스 대장군",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 6,
+        "magic": 9,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 72,
+      "key": "Skarner",
+      "name_en": "Skarner",
+      "name_ko": "스카너",
+      "title_ko": "태고의 군주",
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 8,
+        "magic": 5,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 15,
+      "key": "Sivir",
+      "name_en": "Sivir",
+      "name_ko": "시비르",
+      "title_ko": "전장의 여제",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 3,
+        "magic": 1,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 5,
+      "key": "XinZhao",
+      "name_en": "Xin Zhao",
+      "name_ko": "신 짜오",
+      "title_ko": "데마시아의 호위무사",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 3,
+        "difficulty": 2
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 134,
+      "key": "Syndra",
+      "name_en": "Syndra",
+      "name_ko": "신드라",
+      "title_ko": "어둠의 여제",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 27,
+      "key": "Singed",
+      "name_en": "Singed",
+      "name_ko": "신지드",
+      "title_ko": "미친 화학자",
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 8,
+        "magic": 7,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 412,
+      "key": "Thresh",
+      "name_en": "Thresh",
+      "name_ko": "쓰레쉬",
+      "title_ko": "지옥의 간수",
+      "tags": [
+        "Support",
+        "Tank"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 6,
+        "magic": 6,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 103,
+      "key": "Ahri",
+      "name_en": "Ahri",
+      "name_ko": "아리",
+      "title_ko": "구미호",
+      "tags": [
+        "Mage",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 4,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 32,
+      "key": "Amumu",
+      "name_en": "Amumu",
+      "name_ko": "아무무",
+      "title_ko": "슬픈 미라",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 6,
+        "magic": 8,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 136,
+      "key": "AurelionSol",
+      "name_en": "Aurelion Sol",
+      "name_ko": "아우렐리온 솔",
+      "title_ko": "별의 창조자",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 3,
+        "magic": 8,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 427,
+      "key": "Ivern",
+      "name_en": "Ivern",
+      "name_ko": "아이번",
+      "title_ko": "자연의 아버지",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 268,
+      "key": "Azir",
+      "name_en": "Azir",
+      "name_ko": "아지르",
+      "title_ko": "사막의 황제",
+      "tags": [
+        "Mage",
+        "Marksman"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 3,
+        "magic": 8,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 84,
+      "key": "Akali",
+      "name_en": "Akali",
+      "name_ko": "아칼리",
+      "title_ko": "섬기는 이 없는 암살자",
+      "tags": [
+        "Assassin"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 3,
+        "magic": 8,
+        "difficulty": 7
+      },
+      "partype": "Energy"
+    },
+    {
+      "id": 166,
+      "key": "Akshan",
+      "name_en": "Akshan",
+      "name_ko": "아크샨",
+      "title_ko": "떠도는 감시자",
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 0,
+        "defense": 0,
+        "magic": 0,
+        "difficulty": 0
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 266,
+      "key": "Aatrox",
+      "name_en": "Aatrox",
+      "name_ko": "아트록스",
+      "title_ko": "다르킨의 검",
+      "tags": [
+        "Fighter"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 4,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "partype": "Blood Well"
+    },
+    {
+      "id": 523,
+      "key": "Aphelios",
+      "name_en": "Aphelios",
+      "name_ko": "아펠리오스",
+      "title_ko": "신념의 무기",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 2,
+        "magic": 1,
+        "difficulty": 10
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 12,
+      "key": "Alistar",
+      "name_en": "Alistar",
+      "name_ko": "알리스타",
+      "title_ko": "미노타우로스",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 9,
+        "magic": 5,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 799,
+      "key": "Ambessa",
+      "name_en": "Ambessa",
+      "name_ko": "암베사",
+      "title_ko": "전장의 우두머리",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 2,
+        "magic": 0,
+        "difficulty": 10
+      },
+      "partype": "Energy"
+    },
+    {
+      "id": 1,
+      "key": "Annie",
+      "name_en": "Annie",
+      "name_ko": "애니",
+      "title_ko": "어둠의 아이",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 3,
+        "magic": 10,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 34,
+      "key": "Anivia",
+      "name_en": "Anivia",
+      "name_ko": "애니비아",
+      "title_ko": "얼음불사조",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 4,
+        "magic": 10,
+        "difficulty": 10
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 22,
+      "key": "Ashe",
+      "name_en": "Ashe",
+      "name_ko": "애쉬",
+      "title_ko": "서리 궁수",
+      "tags": [
+        "Marksman",
+        "Support"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 3,
+        "magic": 2,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 157,
+      "key": "Yasuo",
+      "name_en": "Yasuo",
+      "name_ko": "야스오",
+      "title_ko": "용서받지 못한 자",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 4,
+        "magic": 4,
+        "difficulty": 10
+      },
+      "partype": "Flow"
+    },
+    {
+      "id": 245,
+      "key": "Ekko",
+      "name_en": "Ekko",
+      "name_ko": "에코",
+      "title_ko": "시간을 달리는 소년",
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 3,
+        "magic": 7,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 60,
+      "key": "Elise",
+      "name_en": "Elise",
+      "name_ko": "엘리스",
+      "title_ko": "거미 여왕",
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 62,
+      "key": "MonkeyKing",
+      "name_en": "Wukong",
+      "name_ko": "오공",
+      "title_ko": "원숭이 왕",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 2,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 893,
+      "key": "Aurora",
+      "name_en": "Aurora",
+      "name_ko": "오로라",
+      "title_ko": "세계의 경계에 선 마녀",
+      "tags": [
+        "Mage",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 4,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 516,
+      "key": "Ornn",
+      "name_en": "Ornn",
+      "name_ko": "오른",
+      "title_ko": "거산의 화염",
+      "tags": [
+        "Tank"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 9,
+        "magic": 3,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 61,
+      "key": "Orianna",
+      "name_en": "Orianna",
+      "name_ko": "오리아나",
+      "title_ko": "시계태엽 소녀",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 2,
+      "key": "Olaf",
+      "name_en": "Olaf",
+      "name_ko": "올라프",
+      "title_ko": "광전사",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 777,
+      "key": "Yone",
+      "name_en": "Yone",
+      "name_ko": "요네",
+      "title_ko": "잊히지 못한 자",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 4,
+        "magic": 4,
+        "difficulty": 8
+      },
+      "partype": "Flow"
+    },
+    {
+      "id": 83,
+      "key": "Yorick",
+      "name_en": "Yorick",
+      "name_ko": "요릭",
+      "title_ko": "영혼의 길잡이",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 6,
+        "magic": 4,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 77,
+      "key": "Udyr",
+      "name_en": "Udyr",
+      "name_ko": "우디르",
+      "title_ko": "정령 주술사",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 7,
+        "magic": 4,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 6,
+      "key": "Urgot",
+      "name_en": "Urgot",
+      "name_ko": "우르곳",
+      "title_ko": "살상 병기",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 19,
+      "key": "Warwick",
+      "name_en": "Warwick",
+      "name_ko": "워윅",
+      "title_ko": "자운의 고삐 풀린 분노",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 804,
+      "key": "Yunara",
+      "name_en": "Yunara",
+      "name_ko": "유나라",
+      "title_ko": "꺾이지 않는 신념",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 2,
+        "magic": 0,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 350,
+      "key": "Yuumi",
+      "name_en": "Yuumi",
+      "name_ko": "유미",
+      "title_ko": "마법 고양이",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 1,
+        "magic": 8,
+        "difficulty": 2
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 39,
+      "key": "Irelia",
+      "name_en": "Irelia",
+      "name_ko": "이렐리아",
+      "title_ko": "칼날 무희",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 4,
+        "magic": 5,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 28,
+      "key": "Evelynn",
+      "name_en": "Evelynn",
+      "name_ko": "이블린",
+      "title_ko": "고통스런 포옹",
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 2,
+        "magic": 7,
+        "difficulty": 10
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 81,
+      "key": "Ezreal",
+      "name_en": "Ezreal",
+      "name_ko": "이즈리얼",
+      "title_ko": "무모한 탐험가",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 2,
+        "magic": 6,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 420,
+      "key": "Illaoi",
+      "name_en": "Illaoi",
+      "name_ko": "일라오이",
+      "title_ko": "크라켄의 여사제",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 59,
+      "key": "JarvanIV",
+      "name_en": "Jarvan IV",
+      "name_ko": "자르반 4세",
+      "title_ko": "데마시아의 귀감",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 8,
+        "magic": 3,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 498,
+      "key": "Xayah",
+      "name_en": "Xayah",
+      "name_ko": "자야",
+      "title_ko": "저항하는 자",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 10,
+        "defense": 6,
+        "magic": 1,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 143,
+      "key": "Zyra",
+      "name_en": "Zyra",
+      "name_ko": "자이라",
+      "title_ko": "가시 덩굴의 복수",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 3,
+        "magic": 8,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 154,
+      "key": "Zac",
+      "name_en": "Zac",
+      "name_ko": "자크",
+      "title_ko": "비밀 병기",
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 7,
+        "magic": 7,
+        "difficulty": 8
+      },
+      "partype": "None"
+    },
+    {
+      "id": 904,
+      "key": "Zaahen",
+      "name_en": "Zaahen",
+      "name_ko": "자헨",
+      "title_ko": "저물지 않는 자",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 1,
+        "difficulty": 2
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 40,
+      "key": "Janna",
+      "name_en": "Janna",
+      "name_ko": "잔나",
+      "title_ko": "폭풍의 분노",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 24,
+      "key": "Jax",
+      "name_en": "Jax",
+      "name_ko": "잭스",
+      "title_ko": "무기의 달인",
+      "tags": [
+        "Fighter"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 238,
+      "key": "Zed",
+      "name_en": "Zed",
+      "name_ko": "제드",
+      "title_ko": "그림자의 주인",
+      "tags": [
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 2,
+        "magic": 1,
+        "difficulty": 7
+      },
+      "partype": "Energy"
+    },
+    {
+      "id": 101,
+      "key": "Xerath",
+      "name_en": "Xerath",
+      "name_ko": "제라스",
+      "title_ko": "초월한 마법사",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 3,
+        "magic": 10,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 221,
+      "key": "Zeri",
+      "name_en": "Zeri",
+      "name_ko": "제리",
+      "title_ko": "자운의 불꽃",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 126,
+      "key": "Jayce",
+      "name_en": "Jayce",
+      "name_ko": "제이스",
+      "title_ko": "미래의 수호자",
+      "tags": [
+        "Fighter",
+        "Marksman"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 4,
+        "magic": 3,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 142,
+      "key": "Zoe",
+      "name_en": "Zoe",
+      "name_ko": "조이",
+      "title_ko": "여명의 성위",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 7,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 115,
+      "key": "Ziggs",
+      "name_en": "Ziggs",
+      "name_ko": "직스",
+      "title_ko": "마법공학 폭파병",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 4,
+        "magic": 9,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 202,
+      "key": "Jhin",
+      "name_en": "Jhin",
+      "name_ko": "진",
+      "title_ko": "잔혹극의 거장",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 10,
+        "defense": 2,
+        "magic": 6,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 26,
+      "key": "Zilean",
+      "name_en": "Zilean",
+      "name_ko": "질리언",
+      "title_ko": "시간의 수호자",
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 5,
+        "magic": 8,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 222,
+      "key": "Jinx",
+      "name_en": "Jinx",
+      "name_ko": "징크스",
+      "title_ko": "난폭한 말괄량이",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 2,
+        "magic": 4,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 31,
+      "key": "Chogath",
+      "name_en": "Cho'Gath",
+      "name_ko": "초가스",
+      "title_ko": "공허의 공포",
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 7,
+        "magic": 7,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 43,
+      "key": "Karma",
+      "name_en": "Karma",
+      "name_ko": "카르마",
+      "title_ko": "깨우친 자",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 7,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 164,
+      "key": "Camille",
+      "name_en": "Camille",
+      "name_ko": "카밀",
+      "title_ko": "강철의 그림자",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 38,
+      "key": "Kassadin",
+      "name_en": "Kassadin",
+      "name_ko": "카사딘",
+      "title_ko": "공허의 방랑자",
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 5,
+        "magic": 8,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 30,
+      "key": "Karthus",
+      "name_en": "Karthus",
+      "name_ko": "카서스",
+      "title_ko": "죽음을 노래하는 자",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 2,
+        "magic": 10,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 69,
+      "key": "Cassiopeia",
+      "name_en": "Cassiopeia",
+      "name_ko": "카시오페아",
+      "title_ko": "독사의 포옹",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 10
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 145,
+      "key": "Kaisa",
+      "name_en": "Kai'Sa",
+      "name_ko": "카이사",
+      "title_ko": "공허의 딸",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 121,
+      "key": "Khazix",
+      "name_en": "Kha'Zix",
+      "name_ko": "카직스",
+      "title_ko": "공허의 약탈자",
+      "tags": [
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 4,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 55,
+      "key": "Katarina",
+      "name_en": "Katarina",
+      "name_ko": "카타리나",
+      "title_ko": "사악한 칼날",
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 8
+      },
+      "partype": "None"
+    },
+    {
+      "id": 429,
+      "key": "Kalista",
+      "name_en": "Kalista",
+      "name_ko": "칼리스타",
+      "title_ko": "복수의 화신",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 4,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 85,
+      "key": "Kennen",
+      "name_en": "Kennen",
+      "name_ko": "케넨",
+      "title_ko": "폭풍의 심장",
+      "tags": [
+        "Mage"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 4,
+        "magic": 7,
+        "difficulty": 4
+      },
+      "partype": "Energy"
+    },
+    {
+      "id": 51,
+      "key": "Caitlyn",
+      "name_en": "Caitlyn",
+      "name_ko": "케이틀린",
+      "title_ko": "필트오버의 보안관",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 2,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 141,
+      "key": "Kayn",
+      "name_en": "Kayn",
+      "name_ko": "케인",
+      "title_ko": "그림자 사신",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 10,
+        "defense": 6,
+        "magic": 1,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 10,
+      "key": "Kayle",
+      "name_en": "Kayle",
+      "name_ko": "케일",
+      "title_ko": "정의로운 자",
+      "tags": [
+        "Mage",
+        "Marksman"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 6,
+        "magic": 7,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 96,
+      "key": "KogMaw",
+      "name_en": "Kog'Maw",
+      "name_ko": "코그모",
+      "title_ko": "심연의 아귀",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 5,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 42,
+      "key": "Corki",
+      "name_en": "Corki",
+      "name_ko": "코르키",
+      "title_ko": "대담한 폭격수",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 3,
+        "magic": 6,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 133,
+      "key": "Quinn",
+      "name_en": "Quinn",
+      "name_ko": "퀸",
+      "title_ko": "데마시아의 날개",
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 4,
+        "magic": 2,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 897,
+      "key": "KSante",
+      "name_en": "K'Sante",
+      "name_ko": "크산테",
+      "title_ko": "나주마의 긍지",
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 8,
+        "magic": 7,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 240,
+      "key": "Kled",
+      "name_en": "Kled",
+      "name_ko": "클레드",
+      "title_ko": "망나니 기사",
+      "tags": [
+        "Fighter"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 2,
+        "difficulty": 7
+      },
+      "partype": "Courage"
+    },
+    {
+      "id": 246,
+      "key": "Qiyana",
+      "name_en": "Qiyana",
+      "name_ko": "키아나",
+      "title_ko": "원소의 여왕",
+      "tags": [
+        "Assassin"
+      ],
+      "info": {
+        "attack": 0,
+        "defense": 2,
+        "magic": 4,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 203,
+      "key": "Kindred",
+      "name_en": "Kindred",
+      "name_ko": "킨드레드",
+      "title_ko": "영겁의 사냥꾼",
+      "tags": [
+        "Marksman"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 2,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 44,
+      "key": "Taric",
+      "name_en": "Taric",
+      "name_ko": "타릭",
+      "title_ko": "발로란의 방패",
+      "tags": [
+        "Support",
+        "Tank"
+      ],
+      "info": {
+        "attack": 4,
+        "defense": 8,
+        "magic": 5,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 91,
+      "key": "Talon",
+      "name_en": "Talon",
+      "name_ko": "탈론",
+      "title_ko": "검의 그림자",
+      "tags": [
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 3,
+        "magic": 1,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 163,
+      "key": "Taliyah",
+      "name_en": "Taliyah",
+      "name_ko": "탈리야",
+      "title_ko": "바위술사",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 1,
+        "defense": 7,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 223,
+      "key": "TahmKench",
+      "name_en": "Tahm Kench",
+      "name_ko": "탐 켄치",
+      "title_ko": "강의 폭군",
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "info": {
+        "attack": 3,
+        "defense": 9,
+        "magic": 6,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 48,
+      "key": "Trundle",
+      "name_en": "Trundle",
+      "name_ko": "트런들",
+      "title_ko": "트롤 왕",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 6,
+        "magic": 2,
+        "difficulty": 5
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 18,
+      "key": "Tristana",
+      "name_en": "Tristana",
+      "name_ko": "트리스타나",
+      "title_ko": "요들 사수",
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 3,
+        "magic": 5,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 23,
+      "key": "Tryndamere",
+      "name_en": "Tryndamere",
+      "name_ko": "트린다미어",
+      "title_ko": "야만전사 왕",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 10,
+        "defense": 5,
+        "magic": 2,
+        "difficulty": 5
+      },
+      "partype": "Fury"
+    },
+    {
+      "id": 4,
+      "key": "TwistedFate",
+      "name_en": "Twisted Fate",
+      "name_ko": "트위스티드 페이트",
+      "title_ko": "카드의 달인",
+      "tags": [
+        "Mage",
+        "Marksman"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 2,
+        "magic": 6,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 29,
+      "key": "Twitch",
+      "name_en": "Twitch",
+      "name_ko": "트위치",
+      "title_ko": "역병 쥐",
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 2,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 17,
+      "key": "Teemo",
+      "name_en": "Teemo",
+      "name_ko": "티모",
+      "title_ko": "날쌘 정찰병",
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "info": {
+        "attack": 5,
+        "defense": 3,
+        "magic": 7,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 555,
+      "key": "Pyke",
+      "name_en": "Pyke",
+      "name_ko": "파이크",
+      "title_ko": "핏빛 항구의 학살자",
+      "tags": [
+        "Support",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 3,
+        "magic": 1,
+        "difficulty": 7
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 80,
+      "key": "Pantheon",
+      "name_en": "Pantheon",
+      "name_ko": "판테온",
+      "title_ko": "불굴의 창",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 9,
+        "defense": 4,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 9,
+      "key": "Fiddlesticks",
+      "name_en": "Fiddlesticks",
+      "name_ko": "피들스틱",
+      "title_ko": "오래된 공포",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 114,
+      "key": "Fiora",
+      "name_en": "Fiora",
+      "name_ko": "피오라",
+      "title_ko": "결투의 대가",
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "info": {
+        "attack": 10,
+        "defense": 4,
+        "magic": 2,
+        "difficulty": 3
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 105,
+      "key": "Fizz",
+      "name_en": "Fizz",
+      "name_ko": "피즈",
+      "title_ko": "대양의 말썽꾸러기",
+      "tags": [
+        "Assassin",
+        "Fighter"
+      ],
+      "info": {
+        "attack": 6,
+        "defense": 4,
+        "magic": 7,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 74,
+      "key": "Heimerdinger",
+      "name_en": "Heimerdinger",
+      "name_ko": "하이머딩거",
+      "title_ko": "위대한 발명가",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 2,
+        "defense": 6,
+        "magic": 8,
+        "difficulty": 8
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 120,
+      "key": "Hecarim",
+      "name_en": "Hecarim",
+      "name_ko": "헤카림",
+      "title_ko": "전쟁의 전조",
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 4,
+        "difficulty": 6
+      },
+      "partype": "Mana"
+    },
+    {
+      "id": 910,
+      "key": "Hwei",
+      "name_en": "Hwei",
+      "name_ko": "흐웨이",
+      "title_ko": "몽상가",
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "info": {
+        "attack": 7,
+        "defense": 1,
+        "magic": 8,
+        "difficulty": 9
+      },
+      "partype": "Mana"
+    }
+  ]
+}
