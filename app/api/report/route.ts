@@ -29,6 +29,11 @@ const SYNTHESIS_MODEL = "claude-opus-4-7";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
+// CORS preflight (Capacitor WebView origin과 cross-origin)
+export async function OPTIONS() {
+  return new Response(null, { status: 204 });
+}
+
 const resolveMyTeam = (input: ReportInput): "BLUE" | "RED" => {
   const inBlue = input.teamBlue.some(
     (p) =>

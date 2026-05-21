@@ -12,6 +12,11 @@ import { PATCH } from "@/lib/champions";
 export const runtime = "nodejs";
 export const maxDuration = 15;
 
+// CORS preflight (Capacitor WebView origin과 cross-origin)
+export async function OPTIONS() {
+  return new Response(null, { status: 204 });
+}
+
 const InputSchema = z.object({
   riotId: z.string().min(3).describe("예: '히든 온 부쉬#KR1'"),
 });
