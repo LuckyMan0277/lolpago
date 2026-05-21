@@ -56,9 +56,25 @@ jobs:
           PROVISIONING_PROFILE_BASE64: ${{ secrets.PROVISIONING_PROFILE_BASE64 }}
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
+          # Strip stray whitespace/newlines from secrets (a very common GitHub UI footgun)
+          DIST_P12_PASSWORD=$(printf '%s' "$DIST_P12_PASSWORD" | tr -d '\r\n\t ' )
+          KEYCHAIN_PASSWORD=$(printf '%s' "$KEYCHAIN_PASSWORD" | tr -d '\r\n\t ' )
+
           # Decode artifacts to temp files
           echo "$DIST_P12_BASE64" | base64 -d > /tmp/distribution.p12
           echo "$PROVISIONING_PROFILE_BASE64" | base64 -d > /tmp/profile.mobileprovision
+
+          # Diagnostic: verify P12 password locally before keychain import
+          echo "P12 password length: ${#DIST_P12_PASSWORD}"
+          echo "P12 file size: $(wc -c < /tmp/distribution.p12)"
+          if openssl pkcs12 -in /tmp/distribution.p12 -noout -password pass:"$DIST_P12_PASSWORD" -legacy 2>/dev/null; then
+            echo "P12 verifies with -legacy"
+          elif openssl pkcs12 -in /tmp/distribution.p12 -noout -password pass:"$DIST_P12_PASSWORD" 2>/dev/null; then
+            echo "P12 verifies (modern)"
+          else
+            echo "::error::P12 password does not match. Re-register DIST_P12_PASSWORD secret without trailing newline/spaces."
+            exit 1
+          fi
 
           # Extract UUID and Name from profile for later use
           PROFILE_UUID=$(security cms -D -i /tmp/profile.mobileprovision | plutil -extract UUID raw -)
