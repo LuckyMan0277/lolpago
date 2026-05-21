@@ -4,7 +4,7 @@ import { PATCH } from "@/lib/champions";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/70 backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/70 backdrop-blur-md pt-[env(safe-area-inset-top)]">
       <div className="container mx-auto px-4 h-14 max-w-3xl flex items-center justify-between">
         <Link
           href="/"
