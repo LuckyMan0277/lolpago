@@ -1,0 +1,65 @@
+name: Android Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      api_base:
+        description: "API base URL (Vercel 등에 배포된 백엔드)"
+        required: true
+        default: "https://lolpago.vercel.app"
+  push:
+    branches: [main, master]
+    paths:
+      - "app/**"
+      - "components/**"
+      - "lib/**"
+      - "public/**"
+      - "capacitor.config.ts"
+      - "android/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/android-build.yml"
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Setup JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js (mobile, static export)
+        env:
+          NEXT_PUBLIC_API_BASE: ${{ inputs.api_base || 'https://lolpago.vercel.app' }}
+        run: npm run build:mobile
+
+      - name: Capacitor sync Android
+        run: npx cap sync android
+
+      - name: Build debug APK
+        working-directory: android
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: lolpago-android-debug
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 7

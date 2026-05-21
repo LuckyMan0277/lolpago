@@ -5,14 +5,21 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:mobile": "node scripts/build-mobile.mjs",
     "start": "next start",
     "lint": "eslint",
+    "cap:sync": "npm run build:mobile && cap sync",
+    "cap:open:android": "cap open android",
+    "cap:open:ios": "cap open ios",
     "sync:champions": "node scripts/sync-champions.mjs",
     "sync:knowledge": "node scripts/sync-champion-knowledge.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.95.2",
     "@base-ui/react": "^1.4.1",
+    "@capacitor/android": "^8.3.4",
+    "@capacitor/core": "^8.3.4",
+    "@capacitor/ios": "^8.3.4",
     "@dnd-kit/core": "^6.3.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -28,6 +35,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.3.4",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

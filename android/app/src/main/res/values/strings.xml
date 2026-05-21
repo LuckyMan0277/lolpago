@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">lolpago</string>
+    <string name="title_activity_main">lolpago</string>
+    <string name="package_name">com.lolpago.app</string>
+    <string name="custom_url_scheme">com.lolpago.app</string>
+</resources>

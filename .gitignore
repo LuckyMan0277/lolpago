@@ -42,3 +42,15 @@ next-env.d.ts
 
 # cache
 /data/cache/
+
+# capacitor (build artifacts)
+/.api-stash/
+/android/.gradle/
+/android/build/
+/android/app/build/
+/android/local.properties
+/android/app/src/main/assets/public/
+/ios/App/build/
+/ios/App/Pods/
+/ios/App/App/public/
+/ios/DerivedData/

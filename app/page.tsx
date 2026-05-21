@@ -40,6 +40,7 @@ import {
 } from "@/lib/champions";
 import type { ReportOutput } from "@/lib/schema";
 import { cn } from "@/lib/utils";
+import { apiUrl } from "@/lib/api";
 
 const championByKey = new Map(CHAMPIONS.map((c) => [c.key, c]));
 
@@ -100,7 +101,7 @@ export default function HomePage() {
     setLoadGameError(null);
     setLoadGameMsg(null);
     try {
-      const res = await fetch("/api/load-game", {
+      const res = await fetch(apiUrl("/api/load-game"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ riotId: trimmed }),
@@ -230,7 +231,7 @@ export default function HomePage() {
           lane: LANES[my.laneIndex],
         },
       };
-      const res = await fetch("/api/report", {
+      const res = await fetch(apiUrl("/api/report"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
