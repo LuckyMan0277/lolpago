@@ -44,9 +44,18 @@ jobs:
 
       - name: Add iOS platform (if missing)
         run: |
-          if [ ! -d "ios" ]; then
+          if [ ! -f "ios/App/Podfile" ]; then
+            echo "::group::cap add ios"
             npx cap add ios
+            echo "::endgroup::"
+          else
+            echo "iOS platform already present, skipping cap add"
           fi
+          echo "::group::ios tree"
+          ls -la ios || (echo "ios/ missing"; exit 1)
+          ls -la ios/App || (echo "ios/App missing"; exit 1)
+          echo "::endgroup::"
+          test -f ios/App/Podfile || { echo "::error::Podfile missing after cap add"; exit 1; }
 
       - name: Capacitor sync iOS
         run: npx cap sync ios
