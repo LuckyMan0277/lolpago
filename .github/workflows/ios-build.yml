@@ -44,18 +44,12 @@ jobs:
 
       - name: Add iOS platform (if missing)
         run: |
-          if [ ! -f "ios/App/Podfile" ]; then
-            echo "::group::cap add ios"
+          if [ ! -d "ios/App/App.xcodeproj" ]; then
             npx cap add ios
-            echo "::endgroup::"
           else
             echo "iOS platform already present, skipping cap add"
           fi
-          echo "::group::ios tree"
-          ls -la ios || (echo "ios/ missing"; exit 1)
-          ls -la ios/App || (echo "ios/App missing"; exit 1)
-          echo "::endgroup::"
-          test -f ios/App/Podfile || { echo "::error::Podfile missing after cap add"; exit 1; }
+          test -d ios/App/App.xcodeproj || { echo "::error::App.xcodeproj missing after cap add"; exit 1; }
 
       - name: Capacitor sync iOS
         # Capacitor 8은 SPM 기반. 의존성은 xcodebuild가 resolve 한다.
