@@ -1,4 +1,4 @@
-name: iOS Build
+name: iOS Build & TestFlight Upload
 
 on:
   workflow_dispatch:
@@ -7,32 +7,17 @@ on:
         description: "API base URL (Vercel 등에 배포된 백엔드)"
         required: true
         default: "https://lolpago.vercel.app"
-  push:
-    branches: [main, master]
-    paths:
-      - "app/**"
-      - "components/**"
-      - "lib/**"
-      - "public/**"
-      - "capacitor.config.ts"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/ios-build.yml"
 
 jobs:
   build-ios:
     runs-on: macos-15
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Select latest Xcode
-        # Use the runner's default Xcode (newest installed) so the iOS SDK
-        # version matches an installed simulator runtime — actool requires this
-        # even for device builds. Capacitor 8 needs Xcode 16+, which macos-15
-        # satisfies by default.
         run: |
           ls /Applications | grep -E '^Xcode' || true
           sudo xcode-select -s /Applications/Xcode.app
@@ -49,7 +34,7 @@ jobs:
 
       - name: Build Next.js (mobile, static export)
         env:
-          NEXT_PUBLIC_API_BASE: ${{ inputs.api_base || 'https://lolpago.vercel.app' }}
+          NEXT_PUBLIC_API_BASE: ${{ inputs.api_base }}
         run: npm run build:mobile
 
       - name: Add iOS platform (if missing)
@@ -57,35 +42,131 @@ jobs:
           if [ ! -d "ios/App/App.xcodeproj" ]; then
             npx cap add ios
           else
-            echo "iOS platform already present, skipping cap add"
+            echo "iOS platform already present"
           fi
-          test -d ios/App/App.xcodeproj || { echo "::error::App.xcodeproj missing after cap add"; exit 1; }
+          test -d ios/App/App.xcodeproj
 
       - name: Capacitor sync iOS
-        # Capacitor 8은 SPM 기반. 의존성은 xcodebuild가 resolve 한다.
         run: npx cap sync ios
 
-      - name: Build unsigned .app (device, debug)
+      - name: Setup code signing (Keychain + Provisioning Profile)
+        env:
+          DIST_P12_BASE64: ${{ secrets.DIST_P12_BASE64 }}
+          DIST_P12_PASSWORD: ${{ secrets.DIST_P12_PASSWORD }}
+          PROVISIONING_PROFILE_BASE64: ${{ secrets.PROVISIONING_PROFILE_BASE64 }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+        run: |
+          # Decode artifacts to temp files
+          echo "$DIST_P12_BASE64" | base64 -d > /tmp/distribution.p12
+          echo "$PROVISIONING_PROFILE_BASE64" | base64 -d > /tmp/profile.mobileprovision
+
+          # Extract UUID and Name from profile for later use
+          PROFILE_UUID=$(security cms -D -i /tmp/profile.mobileprovision | plutil -extract UUID raw -)
+          PROFILE_NAME=$(security cms -D -i /tmp/profile.mobileprovision | plutil -extract Name raw -)
+          echo "PROFILE_UUID=$PROFILE_UUID" >> $GITHUB_ENV
+          echo "PROFILE_NAME=$PROFILE_NAME" >> $GITHUB_ENV
+          echo "Profile: $PROFILE_NAME ($PROFILE_UUID)"
+
+          # Install provisioning profile to standard location
+          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
+          cp /tmp/profile.mobileprovision "$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_UUID.mobileprovision"
+
+          # Create dedicated keychain (so we don't pollute the runner's default)
+          KEYCHAIN=build.keychain
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security default-keychain -s "$KEYCHAIN"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN"
+
+          # Import distribution certificate
+          security import /tmp/distribution.p12 -k "$KEYCHAIN" -P "$DIST_P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+
+          # Wipe decoded files from disk
+          rm /tmp/distribution.p12
+
+      - name: Build & Archive (Release, signed)
         working-directory: ios/App
-        # Device(iphoneos) 빌드 — 시뮬레이터 런타임 불필요. 코드 사인 없이 .app만 생성.
-        # 실제 App Store 제출은 인증서/프로비저닝 프로파일 secrets 설정이 별도로 필요.
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
         run: |
           xcodebuild \
             -project App.xcodeproj \
             -scheme App \
-            -configuration Debug \
+            -configuration Release \
             -sdk iphoneos \
-            -derivedDataPath build \
             -destination 'generic/platform=iOS' \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_IDENTITY="" \
-            build
+            -archivePath build/App.xcarchive \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="Apple Distribution" \
+            DEVELOPMENT_TEAM=${{ secrets.APPLE_TEAM_ID }} \
+            PROVISIONING_PROFILE_SPECIFIER="$PROFILE_NAME" \
+            PRODUCT_BUNDLE_IDENTIFIER=com.lolpago.app \
+            CURRENT_PROJECT_VERSION=$BUILD_NUMBER \
+            archive
 
-      - name: Upload .app artifact
+      - name: Export IPA (App Store)
+        working-directory: ios/App
+        run: |
+          cat > /tmp/ExportOptions.plist <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/propertylist-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>method</key>
+              <string>app-store</string>
+              <key>teamID</key>
+              <string>${{ secrets.APPLE_TEAM_ID }}</string>
+              <key>signingStyle</key>
+              <string>manual</string>
+              <key>provisioningProfiles</key>
+              <dict>
+                  <key>com.lolpago.app</key>
+                  <string>${PROFILE_NAME}</string>
+              </dict>
+              <key>uploadBitcode</key>
+              <false/>
+              <key>uploadSymbols</key>
+              <true/>
+          </dict>
+          </plist>
+          EOF
+          xcodebuild \
+            -exportArchive \
+            -archivePath build/App.xcarchive \
+            -exportPath build/ipa \
+            -exportOptionsPlist /tmp/ExportOptions.plist
+          ls -la build/ipa
+
+      - name: Upload to TestFlight via altool
+        env:
+          APPSTORE_API_KEY_BASE64: ${{ secrets.APPSTORE_API_KEY_BASE64 }}
+          APPSTORE_KEY_ID: ${{ secrets.APPSTORE_KEY_ID }}
+          APPSTORE_ISSUER_ID: ${{ secrets.APPSTORE_ISSUER_ID }}
+        run: |
+          # altool looks for AuthKey_<KEYID>.p8 in one of these standard dirs
+          mkdir -p "$HOME/.appstoreconnect/private_keys"
+          echo "$APPSTORE_API_KEY_BASE64" | base64 -d > "$HOME/.appstoreconnect/private_keys/AuthKey_${APPSTORE_KEY_ID}.p8"
+
+          IPA=$(ls ios/App/build/ipa/*.ipa | head -1)
+          echo "Uploading: $IPA"
+          xcrun altool --upload-app \
+            -f "$IPA" \
+            -t ios \
+            --apiKey "$APPSTORE_KEY_ID" \
+            --apiIssuer "$APPSTORE_ISSUER_ID"
+
+      - name: Upload IPA artifact (debug copy)
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: lolpago-ios-debug
-          path: ios/App/build/Build/Products/Debug-iphoneos/App.app
-          if-no-files-found: error
+          name: lolpago-ios-ipa
+          path: ios/App/build/ipa/*.ipa
+          if-no-files-found: warn
           retention-days: 7
+
+      - name: Cleanup (keychain + private key)
+        if: always()
+        run: |
+          security delete-keychain build.keychain || true
+          rm -f "$HOME/.appstoreconnect/private_keys"/AuthKey_*.p8 || true
