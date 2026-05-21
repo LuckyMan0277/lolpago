@@ -58,23 +58,21 @@ jobs:
           test -f ios/App/Podfile || { echo "::error::Podfile missing after cap add"; exit 1; }
 
       - name: Capacitor sync iOS
+        # Capacitor 8은 SPM 기반. 의존성은 xcodebuild가 resolve 한다.
         run: npx cap sync ios
-
-      - name: Install CocoaPods
-        working-directory: ios/App
-        run: pod install --repo-update
 
       - name: Build unsigned .app (debug)
         working-directory: ios/App
-        # 이 단계는 코드 서명 없이 simulator/임시 빌드만 검증한다.
+        # 이 단계는 코드 서명 없이 simulator 빌드만 검증한다.
         # 실제 App Store 제출은 인증서/프로비저닝 프로파일 secrets 설정이 별도로 필요.
         run: |
           xcodebuild \
-            -workspace App.xcworkspace \
+            -project App.xcodeproj \
             -scheme App \
             -configuration Debug \
             -sdk iphonesimulator \
             -derivedDataPath build \
+            -destination 'generic/platform=iOS Simulator' \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             build
