@@ -28,10 +28,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Select Xcode 16
-        # Capacitor 8 requires Xcode 16+ (uses ApplicationDelegateProxy API
-        # that doesn't compile under Xcode 15.4 — Swift picks the wrong overload).
-        run: sudo xcode-select -s /Applications/Xcode_16.app
+      - name: Select latest Xcode
+        # Use the runner's default Xcode (newest installed) so the iOS SDK
+        # version matches an installed simulator runtime — actool requires this
+        # even for device builds. Capacitor 8 needs Xcode 16+, which macos-15
+        # satisfies by default.
+        run: |
+          ls /Applications | grep -E '^Xcode' || true
+          sudo xcode-select -s /Applications/Xcode.app
+          xcodebuild -version
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
