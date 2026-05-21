@@ -60,26 +60,27 @@ jobs:
         # Capacitor 8은 SPM 기반. 의존성은 xcodebuild가 resolve 한다.
         run: npx cap sync ios
 
-      - name: Build unsigned .app (debug)
+      - name: Build unsigned .app (device, debug)
         working-directory: ios/App
-        # 이 단계는 코드 서명 없이 simulator 빌드만 검증한다.
+        # Device(iphoneos) 빌드 — 시뮬레이터 런타임 불필요. 코드 사인 없이 .app만 생성.
         # 실제 App Store 제출은 인증서/프로비저닝 프로파일 secrets 설정이 별도로 필요.
         run: |
           xcodebuild \
             -project App.xcodeproj \
             -scheme App \
             -configuration Debug \
-            -sdk iphonesimulator \
+            -sdk iphoneos \
             -derivedDataPath build \
-            -destination 'generic/platform=iOS Simulator' \
+            -destination 'generic/platform=iOS' \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_IDENTITY="" \
             build
 
       - name: Upload .app artifact
         uses: actions/upload-artifact@v4
         with:
           name: lolpago-ios-debug
-          path: ios/App/build/Build/Products/Debug-iphonesimulator/App.app
+          path: ios/App/build/Build/Products/Debug-iphoneos/App.app
           if-no-files-found: error
           retention-days: 7
