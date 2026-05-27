@@ -1,0 +1,5 @@
+{
+  "_format": "챔피언별 라인 적합도 + 레벨 스파이크/라인전 강도. JUNGLE은 3렙(level_spike)만, TOP/MID/BOTTOM은 2렙(level_spike) + 라인전(laning). 1~5 스케일(5=매우 강함).",
+  "_patch": "16.10.1",
+  "_generated_at": null
+}

@@ -2,6 +2,7 @@
 // value: -1 (완전 우리 우세) ~ +1 (완전 상대 우세)
 
 import { getChampionKnowledge } from "@/lib/champions";
+import { getLaneScore, type LaneRole } from "@/lib/level-power";
 import type { GeoLaneValue } from "@/lib/schema";
 
 export type TimelinePoint = { t: number; value: number };
@@ -55,14 +56,48 @@ const avgPower = (
   return sum / champKeys.length;
 };
 
+// 초반 구간(t<=8)에서 라인별 레벨 스파이크/라인전 데이터로 보정.
+// JUNGLE: t<=4 → 3렙 스파이크 점수를 직접 사용
+// TOP/MID/BOTTOM: t<=3 → 2렙 스파이크, 3<t<=8 → 라인전 점수
+// 데이터 없으면 기존 powerAt 그대로.
+const laneAwarePowerAt = (
+  champKey: string,
+  lane: LaneRole,
+  t: number,
+): number => {
+  const knowledge = getChampionKnowledge(champKey);
+  const fallback = powerAt(knowledge?.power, t);
+  const score = getLaneScore(champKey, lane);
+  if (!score) return fallback;
+  if (lane === "JUNGLE") {
+    if (t <= 4) return score.level_spike;
+    return fallback;
+  }
+  if (t <= 3) return score.level_spike;
+  if (t <= 8 && score.laning != null) return score.laning;
+  return fallback;
+};
+
+const avgLanePower = (
+  champKeys: string[],
+  lane: LaneRole,
+  t: number,
+): number => {
+  if (champKeys.length === 0) return 3;
+  let sum = 0;
+  for (const k of champKeys) sum += laneAwarePowerAt(k, lane, t);
+  return sum / champKeys.length;
+};
+
 // 한 라인의 시간별 주도권 계산
 const computeLaneCurve = (
+  lane: LaneRole,
   ourLaneChamps: string[],
   enemyLaneChamps: string[],
 ): TimelinePoint[] => {
   return TIME_POINTS.map((t) => {
-    const ourP = avgPower(ourLaneChamps, t);
-    const enemyP = avgPower(enemyLaneChamps, t);
+    const ourP = avgLanePower(ourLaneChamps, lane, t);
+    const enemyP = avgLanePower(enemyLaneChamps, lane, t);
     // power 차이 -4~+4 범위. enemy가 강하면 양수.
     const diff = enemyP - ourP;
     // -1~+1로 정규화 + 클립
@@ -100,7 +135,7 @@ export const computeLanePriorityTimeline = (
   const geoLanes: GeoLaneValue[] = ["TOP", "JUNGLE", "MID", "BOTTOM"];
   return geoLanes.map((lane) => ({
     lane,
-    points: computeLaneCurve(ours[lane], enemies[lane]),
+    points: computeLaneCurve(lane, ours[lane], enemies[lane]),
   }));
 };
 

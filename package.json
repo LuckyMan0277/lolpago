@@ -15,7 +15,8 @@
     "cap:open:android": "cap open android",
     "cap:open:ios": "cap open ios",
     "sync:champions": "node scripts/sync-champions.mjs",
-    "sync:knowledge": "node scripts/sync-champion-knowledge.mjs"
+    "sync:knowledge": "node scripts/sync-champion-knowledge.mjs",
+    "gen:level-power": "node scripts/generate-level-power.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.95.2",
